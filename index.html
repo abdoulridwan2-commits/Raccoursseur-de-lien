@@ -13,11 +13,14 @@
     </header>
     <section>
         <main>
-            <p class="error_message">
-                <input type="text" placeholder="lien raccourssir" class="long_line">
-                <button>raccourssir</button>
-                <div class="result">exple.com</div>
-            </p>
+            <div class="error_message">
+                <p class="message" id="message">error</p>
+                <form class="shortener_form" id="shortenerForm">
+                    <input type="text" id="longLink" placeholder="lien raccourssir" class="long_line">
+                    <button type="submit">raccourssir</button>
+                </form>
+                <div class="result" id="result">exple.com</div>
+            </div>
         </main>
     </section>
     <footer>
@@ -26,6 +29,7 @@
         </p>
 
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
