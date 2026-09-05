@@ -9,18 +9,26 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(135deg, #eef3ff, #f9fbff);
 }
 
 header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: rgb(122, 122, 194);
-  padding: 20px 15px;
+  background: linear-gradient(135deg, #5d6df5, #7d8cff);
+  color: white;
+  padding: 24px 15px;
 }
 
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.95;
 }
 
 section {
@@ -28,67 +36,92 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 25px 20px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  width: min(420px, 90%);
+  width: min(460px, 95%);
   text-align: center;
 }
 
 .error_message {
-  color: rgb(209, 105, 7);
-  padding: 15px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #d17000;
+  padding: 25px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(40, 58, 135, 0.12);
+  border: 1px solid rgba(122, 122, 194, 0.1);
 }
 
 .message {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .shortener_form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .long_line,
 button {
   margin: 0;
-  padding: 15px;
+  padding: 15px 16px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: 0;
   width: 100%;
 }
 
 .long_line {
-  border: 1px solid #ccc;
+  border: 1px solid #d6dcff;
+  background: #f6f7ff;
+  font-size: 1rem;
 }
 
 button {
   border: none;
-  background: rgb(122, 122, 194);
+  background: linear-gradient(135deg, #5d6df5, #7d8cff);
   color: white;
   cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.97;
+}
+
+.result_box {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .result {
-  margin-top: 15px;
-  padding: 12px;
-  background: #ececec;
-  border-radius: 5px;
+  flex: 1;
+  padding: 14px 12px;
+  background: #f3f5ff;
+  border-radius: 10px;
   color: #222;
   font-weight: bold;
+  word-break: break-all;
+}
+
+.copy_btn {
+  width: auto;
+  min-width: 120px;
 }
 
 footer {
   text-align: center;
   padding: 15px;
-  background: #f2f2f2;
+  background: #eef2ff;
+  color: #333;
 }

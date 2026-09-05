@@ -1,35 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raccoursseur de lien en java script</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Application de Raccoursseur de lien</h1>
-        <p>mettre le lien actif sinon sa marchera  pas ! </p>
+      <h1>Application de Raccoursseur de lien</h1>
+      <p>mettre le lien actif sinon sa marchera pas !</p>
     </header>
     <section>
-        <main>
-            <div class="error_message">
-                <p class="message" id="message">error</p>
-                <form class="shortener_form" id="shortenerForm">
-                    <input type="text" id="longLink" placeholder="lien raccourssir" class="long_line">
-                    <button type="submit">raccourssir</button>
-                </form>
-                <div class="result" id="result">exple.com</div>
-            </div>
-        </main>
+      <main>
+        <div class="error_message">
+          <p class="message" id="message">error</p>
+          <form class="shortener_form" id="shortenerForm">
+            <input
+              type="text"
+              id="longLink"
+              placeholder="lien raccourssir"
+              class="long_line"
+            />
+            <button type="submit">raccourssir</button>
+          </form>
+          <div class="result_box">
+            <div class="result" id="result">exemple.com</div>
+            <button type="button" class="copy_btn" id="copyBtn">Copier</button>
+          </div>
+        </div>
+      </main>
     </section>
     <footer>
-        <p>
-            &copy;Dev ridwan@ , tout droit reservé !
-        </p>
-
+      <p>&copy;Dev ridwan@ , tout droit reservé !</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
